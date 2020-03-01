@@ -22,7 +22,7 @@
   }
   const basePath = '/web'//服务器网站根目录
   let baseDir = ''//项目目录名称
-  let  back_up_dir='back_up/' //备份目录名称,需手动创建，可选,注意有斜杠
+  let  back_up_dir='' //备份目录名称,需手动创建，可选,注意目录名后有斜杠   比如    back_up/
   const bakDirName = baseDir + '.bak' + moment(new Date()).format('YYYY-M-D-HH:mm:ss')//备份文件名
   const buildPath = path.resolve('./dist')//本地项目编译后的文件目录
 
