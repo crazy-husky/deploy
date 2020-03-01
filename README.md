@@ -37,4 +37,5 @@
      
    ### 3.执行npm run build 或者单独执行delopy: node deploy
    
-   
+   ## 建议：避免个人信息泄露，账号密码建议从其他目录导入，登陆用户最好也不要是超级用户。
+      脚本文章链接： http://gohusky.cn/#/public/detail/auto-deploy
