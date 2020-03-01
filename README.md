@@ -7,8 +7,8 @@
 ##  利用npm 或者yarn 安装依赖。
 ##  ``` moment util events ssh2 progress inquirer ```
 
-# 食用步骤：
-  1.配置基本信息，比如服务器账号密码，上传目录等：
+## 食用步骤：
+  ### 1.配置基本信息，比如服务器账号密码，上传目录等：
    ```
    /******************************请手动配置以下内容*********************************/  
    /** 远程服务器配置
@@ -29,11 +29,12 @@
 
   /**********************************配置结束***************************************/
    ```
-   2.搭配脚手架，比如vue-cli或者create-react-app 使用，利用npm 声明周期post让deploy在build之后执行：
+   ### 2.搭配脚手架，比如vue-cli或者create-react-app 使用，利用npm 声明周期post让deploy在build之后执行：
    打开 package.json文件，在 scripts中添加：
       "scripts": {
           "postbuild": "node deploy.js"
-       },
-   3.执行npm run build 或者单独执行delopy: node deploy
+       }
+     
+   ### 3.执行npm run build 或者单独执行delopy: node deploy
    
    
