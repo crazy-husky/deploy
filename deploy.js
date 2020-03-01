@@ -236,7 +236,6 @@ function getFileOrDirList(server, remotePath, isFile, then){
 			}
         });
         remoteFile=remoteFile.map(item=>item.split('/')[2]).filter(item=> item&&item.trim()) //只保留第一层目录
-        remoteFile.push(basePath+'(项目根目录)') //上传网站首页文件地址
         remoteFile=Array.from(new Set(remoteFile)) //去重
 		then(err, remoteFile);
     })
