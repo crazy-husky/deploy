@@ -237,7 +237,7 @@ function getFileOrDirList(server, remotePath, isFile, then){
         });
         remoteFile=remoteFile.map(item=>item.split('/')[2]).filter(item=> item&&item.trim()) //只保留第一层目录
         remoteFile=Array.from(new Set(remoteFile)) //去重
-		then(err, remoteFile);
+	then(err, remoteFile);
     })
 };
 
